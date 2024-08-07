@@ -26,7 +26,7 @@ eck-agent:
   enabled: true
   spec:
     elasticsearchRef:
-      name: elasticsearch
+      - name: eck-elasticsearch
 # If enabled, will use the eck-fleet-server chart and deploy a Fleet Server resource.
 #
 eck-fleet-server:
