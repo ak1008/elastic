@@ -119,8 +119,8 @@ eck-fleet-server:
     - name: elasticsearch
 
   
-  eck-beats:
-    enabled: false
+eck-beats:
+  enabled: false
 
 # If enabled, will use the eck-logstash chart and deploy a Logstash resource.
 #
