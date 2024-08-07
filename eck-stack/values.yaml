@@ -24,9 +24,18 @@ eck-kibana:
 #
 eck-agent:
   enabled: true
-  #spec:
-    #elasticsearchRef:
-    #- name: eck-elasticsearch
+  spec:
+  # policyID determines into which Agent Policy this Agent will be enrolled.
+  # policyID: eck-agent
+
+  # Referenced resources are below and depending on the setup, at least one is required for a functional Agent.
+  # ref: https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-elastic-agent-fleet-configuration.html#k8s-elastic-agent-fleet-configuration-setting-referenced-resources
+  #
+  # Reference to ECK-managed Kibana instance.
+  #
+  kibanaRef:
+    name: eck-kibana
+
 # If enabled, will use the eck-fleet-server chart and deploy a Fleet Server resource.
 #
 eck-fleet-server:
