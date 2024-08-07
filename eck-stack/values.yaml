@@ -24,12 +24,7 @@ eck-kibana:
 #
 eck-agent:
   enabled: true
-  spec:
-  # Reference to ECK-managed Kibana instance.
-  #
-    kibanaRef:
-      name: eck-kibana
-
+  
 # If enabled, will use the eck-fleet-server chart and deploy a Fleet Server resource.
 #
 eck-fleet-server:
